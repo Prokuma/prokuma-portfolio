@@ -35,8 +35,8 @@
         display: flex;
         top: -15px;
         left: -15px;
-        width: calc(100vw + 30px);
-        height: calc(100vh + 30px);
+        bottom: -15px;
+        right: -15px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
