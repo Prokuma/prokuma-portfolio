@@ -6,6 +6,7 @@
 	import Navigator from "$lib/Navigator.svelte";
     import PostIcon from 'svelte-material-icons/Post.svelte';
     import TwitterIcon from 'svelte-material-icons/Twitter.svelte';
+    import GitHubIcon from 'svelte-material-icons/GitHub.svelte';
 	import SectionContentList from "$lib/SectionContentList.svelte";
     import SectionContentListItem from "$lib/SectionContentListItem.svelte";
     import InformationIcon from 'svelte-material-icons/Information.svelte';
@@ -45,7 +46,7 @@
                             <PostIcon />Hatena Blog
                         </IconLink>
                         <IconLink href="https://github.com/Prokuma" withText={true}>
-                            <MailIcon />Prokuma
+                            <GitHubIcon />Prokuma
                         </IconLink>
                         <IconLink href="https://twitter.com/ProkumaDev" withText={true}>
                             <TwitterIcon />ProkumaDev
