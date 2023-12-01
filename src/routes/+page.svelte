@@ -24,7 +24,7 @@
 </svelte:head>
 
 <Background />
-<main>
+<div class="content-container">
     <div class="hero-placeholder"></div>
     <div class="content">
         <Section>
@@ -184,21 +184,22 @@
         <div class="hero-placeholder">
             <div class="footer">
                 <p>© 2023 Prokuma All rights reserved</p>
+            </div>
         </div>
     </div>
-</main>
+</div>
 
 <Navigator />
 
 <style lang="scss">
-    main {
+    .content-container {
         position :relative;
         margin: 0 auto;
         color: white;
     }
 
     @media (min-width: 640px) {
-        main {
+        .content-container {
             max-width: none;
         }
     }
