@@ -27,6 +27,7 @@
     .section {
         min-height: 100vh;
         padding-top: 4rem;
+        color: white;
 
         .container {
             margin: 0 2rem;

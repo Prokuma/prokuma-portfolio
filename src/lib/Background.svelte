@@ -6,12 +6,10 @@
 
     onMount(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 0 && !blured) {
-                backgroundElement.classList.add('blured');
-                blured = true;
-            } else if (window.scrollY === 0 && blured) {
-                backgroundElement.classList.remove('blured');
+            if ((window.scrollY < window.innerHeight/2 || window.scrollY > document.body.scrollHeight - 3*window.innerHeight/2)) {
                 blured = false;
+            } else {
+                blured = true;
             }
         });
 
@@ -35,25 +33,29 @@
     .bg-container {
         position: fixed;
         display: flex;
-        width: 100vw;
-        height: 100vh;
+        top: -15px;
+        left: -15px;
+        width: calc(100vw + 30px);
+        height: calc(100vh + 30px);
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
+        background: #666 url('/background.jpeg') no-repeat;
+        background-size: cover;
+        overflow: hidden;
         transition: filter, 0.5s;
 
         &__blur {
-            filter: blur(10px);
-            color: #808080;
+            filter: blur(15px);
         }
         h1 {
             margin: 0;
             font-size: 4.5rem;
+            color: white;
         }
         h2 {
             margin: 0;
-            color: #808080;
+            color: #bbbbbb;
         }
 
         .scroll-down-picture {
