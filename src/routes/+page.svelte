@@ -19,6 +19,10 @@
 	import WorkCard from "$lib/WorkCard.svelte";
 </script>
 
+<svelte:head>
+    <title>Prokuma | Dohyun Kim</title>
+</svelte:head>
+
 <Background />
 <main>
     <div class="hero-placeholder"></div>
@@ -32,6 +36,7 @@
                     <SectionContentListItem title="居住">奈良県奈良市</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
                     <SectionContentListItem title="所属">奈良先端科学技術大学院大学先端科学技術研究科</SectionContentListItem>
+                    <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
                     <SectionContentListItem title="興味">コンピュータ・アーキテクチャ、組込システム、FPGA、Webバックエンドなど</SectionContentListItem>
                     <SectionContentListItem title="リンク">
                         <IconLink href="https://qiita.com/Prokuma" withText={true}>
@@ -53,6 +58,7 @@
                 <SectionContentList>
                     <SectionContentListItem title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
                     <SectionContentListItem title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
+                    <SectionContentListItem title="ツール">Vim / Docker / Git / Linux / Icarus Verilog</SectionContentListItem>
                     <SectionContentListItem title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
@@ -87,19 +93,67 @@
                 <SectionSubTitle>プロダクト</SectionSubTitle>
                 <Works>
                     <WorkCard
-                        title="Prokuma.dev"
+                        title="Portfolio Website"
+                        yearMonth="2023/12~"
+                        imgSrc="/works/portfolio.png"
                         href="https://prokuma.dev"
                         description="このサイトです。"
+                        tags={["Svelte", "TypeScript"]} 
+                    />
+                    <WorkCard
+                        title="PL Accounting"
+                        yearMonth="2023/08~"
+                        imgSrc="/works/placcounting.png"
+                        href="https://github.com/Prokuma/PLAccounting-Backend"
+                        description="個人事業主向けの簡易会計ソフトウェアです。"
+                        tags={["Go", "Gin", "GORM", "Svelte", "TypeScript"]} 
+                    />
+                    <WorkCard
+                        title="Status Screen"
+                        yearMonth="2023/08~"
+                        imgSrc="/works/status_screen.jpeg"
+                        description="研究室に置いてあるステータスボードです。"
+                        tags={["Android", "Kotlin", "Firebase", "Nuxt.js", "TypeScript"]}
+                    />
+                    <WorkCard
+                        title="IMAX_GCN"
+                        yearMonth="2023/01~"
+                        imgSrc="/works/gcn.png"
+                        href="https://github.com/NAIST-Archlab/IMAX2_GCN"
+                        description="研究で書いたIMAX上で動くGCNの実装です。"
+                        tags={["C", "CUDA", "GCN", "IMAX", "Research"]}
                     />
                     <WorkCard
                         title="Kasumi"
+                        yearMonth="2022/08~"
+                        imgSrc="/works/kasumi.png"
                         href="https://github.com/Prokuma/Kasumi"
                         description="RISC-V RV32IのVerilog実装です。"
+                        tags={["Verilog", "RISC-V"]}
                     />
                     <WorkCard
-                        title="IMAX2_GCN"
-                        href="https://github.com/NAIST-Archlab/IMAX2_GCN"
-                        description="研究で書いたIMAX上で動くGCNの実装です。"
+                        title="Ayumu"
+                        yearMonth="2021/06"
+                        imgSrc="/works/ayumu.avif"
+                        href="https://github.com/Prokuma/Ayumu"
+                        description="初自前設計の自作CPUです。"
+                        tags={["Verilog", "CPU"]}
+                    />
+                    <WorkCard
+                        title="Contour Camera"
+                        yearMonth="2020/03"
+                        imgSrc="/works/memo_counter.webp"
+                        href="https://play.google.com/store/apps/details?id=kr.prokuma.memocounter"
+                        description="伝票が出ない居酒屋などで注文したものをメモしておくアプリです。"
+                        tags={["Android", "Kotlin"]}
+                    />
+                    <WorkCard
+                        title="Contour Camera"
+                        yearMonth="2018/09"
+                        imgSrc="/works/contour_camera.jpeg"
+                        href="https://github.com/Prokuma/Contour-Camera"
+                        description="輪郭検出機能を使った線画カメラアプリです。"
+                        tags={["iOS", "Swift", "OpenCV"]}
                     />
                 </Works>
                 <br />

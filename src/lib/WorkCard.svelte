@@ -2,7 +2,9 @@
     export let href = "";
     export let imgSrc = "dummy.svg";
     export let title = "";
+    export let yearMonth = "";
     export let description = "";
+    export let tags: string[] = [];
     let onHover = false;
 </script>
 
@@ -11,12 +13,15 @@
     on:mouseenter={() => onHover = true}
     on:mouseleave={() => onHover = false}
 >
-    <div class="work-card__image">
-        <img src={imgSrc} alt="thumnail">
-    </div>
+    <img src={imgSrc} alt="thumnail" class="work-card__image">
     <div class="work-card__description" class:hoverd={onHover}>
-        <p class="title">{title}</p>
+        <p class="title">{title}<span>{yearMonth}</span></p>
         <p>{description}</p>
+        <div class="tags">
+            {#each tags as tag}
+                <span class="tag">{tag}</span>
+            {/each}
+        </div>
     </div>
 </button>
 
@@ -27,26 +32,51 @@
         transition: all .5s cubic-bezier(0,1,0,1);
         border-radius: 5px;
         box-shadow: silver 2px 2px 10px;
-        max-height: 30em;
-        flex-basis: 300px;
-        flex-grow: 1;
+        max-height: 22rem;
         align-self: stretch;
         cursor: pointer;
+        width: calc(100% / 3 - 2rem);
+        flex-shrink: 0;
+
+        @media (max-width: 960px) {
+            width: calc(100% / 2 - 1.5rem);
+        }
+        @media (max-width: 640px) {
+            width: calc(100%);
+        }
 
         .title {
-            font-size: 1.8em;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 0;
+            span {
+                font-size: 1rem;
+                margin-left: 0.5rem;
+                font-weight: normal;
+                color: #777;
+            }
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+            .tag {
+                background-color: #aaa;
+                color: #fff;
+                padding: 0.2rem 0.5rem;
+                border-radius: 5px;
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+            }
         }
 
         &__image {
-            img {
-                width: 100%;
-                @media (max-width: calc(width - 2rem)) {
-                    width: calc(100vw - 2rem);
-                }
-                object-fit: cover;
-            }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
             overflow: hidden;
         }
 
@@ -55,7 +85,7 @@
             position: absolute;
             width: 100%;
             bottom: 0;
-            background: linear-gradient(#fff0 0%, #fffa 20%, #fff 100%);
+            background: linear-gradient(#fff0 0%, #fff7 20%, #fff 100%);
             backdrop-filter: blur(2px);
             padding: 1rem;
             transition: min-height .3s;
