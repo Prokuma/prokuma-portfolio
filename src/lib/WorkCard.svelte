@@ -49,6 +49,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 0;
+            color: #000;
             span {
                 font-size: 1rem;
                 margin-left: 0.5rem;
@@ -90,6 +91,7 @@
             padding: 1rem;
             transition: min-height .3s;
             min-height: 0%;
+            color: #000;
         }
 
         .hoverd {

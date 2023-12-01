@@ -58,7 +58,7 @@
                 <SectionContentList>
                     <SectionContentListItem title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
                     <SectionContentListItem title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
-                    <SectionContentListItem title="ツール">Vim / Docker / Git / Linux / Icarus Verilog</SectionContentListItem>
+                    <SectionContentListItem title="ツール">Vim / Docker / Git / Linux / Icarus Verilog / Firebase</SectionContentListItem>
                     <SectionContentListItem title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
@@ -140,7 +140,7 @@
                         tags={["Verilog", "CPU"]}
                     />
                     <WorkCard
-                        title="Contour Camera"
+                        title="Memo Counter"
                         yearMonth="2020/03"
                         imgSrc="/works/memo_counter.webp"
                         href="https://play.google.com/store/apps/details?id=kr.prokuma.memocounter"
@@ -176,7 +176,7 @@
                         <IconLink href="https://twitter.com/ProkumaDev" withText={true}><TwitterIcon />ProkumaDev</IconLink>
                         <IconLink href="https://twitter.com/ProkumaH" withText={true}><TwitterIcon />ProkumaH</IconLink>
                     </SectionContentListItem>
-                    <SectionContentListItem title="メールアドレス">prokuma [a.t.] prokuma.dev ([at]を@に置き換えてください)</SectionContentListItem>
+                    <SectionContentListItem title="メール">prokuma [a.t.] prokuma.dev ([at]を@に置き換えてください)</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
