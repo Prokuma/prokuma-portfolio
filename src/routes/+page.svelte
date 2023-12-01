@@ -6,7 +6,7 @@
 	import Navigator from "$lib/Navigator.svelte";
     import PostIcon from 'svelte-material-icons/Post.svelte';
     import TwitterIcon from 'svelte-material-icons/Twitter.svelte';
-    import GitHubIcon from 'svelte-material-icons/GitHub.svelte';
+    import GitHubIcon from 'svelte-material-icons/Github.svelte';
 	import SectionContentList from "$lib/SectionContentList.svelte";
     import SectionContentListItem from "$lib/SectionContentListItem.svelte";
     import InformationIcon from 'svelte-material-icons/Information.svelte';
