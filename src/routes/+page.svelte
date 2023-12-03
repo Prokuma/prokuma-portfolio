@@ -38,7 +38,8 @@
                     <SectionContentListItem title="所属">奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
                     <SectionContentListItem title="興味">コンピュータ・アーキテクチャ / 組込システム / FPGA / Webバックエンドなど</SectionContentListItem>
-                    <SectionContentListItem title="リンク">
+                    <SectionContentListItem title="研究分野">コンピュータ・アーキテクチャ</SectionContentListItem>
+                    <SectionContentListItem title="リンク集">
                         <IconLink href="https://qiita.com/Prokuma" withText={true}>
                             <PostIcon />Qiita
                         </IconLink>
