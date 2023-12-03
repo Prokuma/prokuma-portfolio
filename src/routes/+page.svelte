@@ -32,34 +32,33 @@
             <SectionContent>
                 <SectionSubTitle>情報</SectionSubTitle>
                 <SectionContentList>
-                    <SectionContentListItem title="名前">金 道鉉(キム・ドヒョン/Dohyun Kim)</SectionContentListItem>
+                    <SectionContentListItem title="名前">金 道鉉 (Dohyun Kim)</SectionContentListItem>
                     <SectionContentListItem title="居住">奈良県奈良市</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
-                    <SectionContentListItem title="所属">奈良先端科学技術大学院大学先端科学技術研究科</SectionContentListItem>
+                    <SectionContentListItem title="所属">奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
-                    <SectionContentListItem title="興味">コンピュータ・アーキテクチャ、組込システム、FPGA、Webバックエンドなど</SectionContentListItem>
+                    <SectionContentListItem title="興味">コンピュータ・アーキテクチャ / 組込システム / FPGA / Webバックエンドなど</SectionContentListItem>
                     <SectionContentListItem title="リンク">
                         <IconLink href="https://qiita.com/Prokuma" withText={true}>
                             <PostIcon />Qiita
                         </IconLink>
                         <IconLink href="https://prokuma.hateblo.jp" withText={true}>
-                            <PostIcon />Hatena Blog
+                            <PostIcon />Blog
                         </IconLink>
                         <IconLink href="https://github.com/Prokuma" withText={true}>
                             <GitHubIcon />Prokuma
                         </IconLink>
-                        <IconLink href="https://twitter.com/ProkumaDev" withText={true}>
-                            <TwitterIcon />ProkumaDev
-                        </IconLink>
                     </SectionContentListItem>
                 </SectionContentList>
-                <br />
+            </SectionContent>
+            <br />
+            <SectionContent align="right">
                 <SectionSubTitle>スキル</SectionSubTitle>
                 <SectionContentList>
-                    <SectionContentListItem title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
-                    <SectionContentListItem title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
-                    <SectionContentListItem title="ツール">Vim / Docker / Git / Linux / Icarus Verilog / Firebase</SectionContentListItem>
-                    <SectionContentListItem title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js</SectionContentListItem>
+                    <SectionContentListItem align="right" title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
+                    <SectionContentListItem align="right" title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
+                    <SectionContentListItem align="right" title="ツール">Vim / Docker / Git / Linux / Icarus Verilog / Firebase</SectionContentListItem>
+                    <SectionContentListItem align="right" title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -76,13 +75,15 @@
                     <SectionContentListItem title="2022年4月~2024年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士前期課程</SectionContentListItem>
                     <SectionContentListItem title="2024年4月~">奈良先端科学技術大学院大学 先端科学技術研究科 博士後期課程</SectionContentListItem>
                 </SectionContentList>
-                <br/>
+            </SectionContent>
+            <br/>
+            <SectionContent align="right">
                 <SectionSubTitle>職歴</SectionSubTitle>
                 <SectionContentList>
-                    <SectionContentListItem title="2014年2月~2015年12月">個人事業主（ソフトウェア開発など）</SectionContentListItem>
-                    <SectionContentListItem title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
-                    <SectionContentListItem title="2023年5月~">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
-                    <SectionContentListItem title="2023年8月~">個人事業主開業（ソフトウェア開発など）</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2014年2月~2015年12月">個人事業主(ソフトウェア開発など)</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2023年5月~">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2023年8月~">個人事業主(ソフトウェア開発など)</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -156,7 +157,9 @@
                         tags={["iOS", "Swift", "OpenCV"]}
                     />
                 </Works>
-                <br />
+            </SectionContent>
+            <br />
+            <SectionContent align="right">
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem>
@@ -172,11 +175,16 @@
             <SectionTitle title="Contact"><MailIcon /></SectionTitle>
             <SectionContent>
                 <SectionContentList>
-                    <SectionContentListItem title="Twitter">
+                    <SectionContentListItem title="GitHub">
+                        <IconLink href="https://github.com/Prokuma" withText={true}>
+                            <GitHubIcon />Prokuma
+                        </IconLink>
+                    </SectionContentListItem>
+                    <SectionContentListItem title="X">
                         <IconLink href="https://twitter.com/ProkumaDev" withText={true}><TwitterIcon />ProkumaDev</IconLink>
                         <IconLink href="https://twitter.com/ProkumaH" withText={true}><TwitterIcon />ProkumaH</IconLink>
                     </SectionContentListItem>
-                    <SectionContentListItem title="メール">prokuma [a.t.] prokuma.dev ([at]を@に置き換えてください)</SectionContentListItem>
+                    <SectionContentListItem title="Email"><MailIcon />prokuma [a.t.] prokuma.dev ([at]を@に置き換えてください)</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -196,9 +204,10 @@
         position :relative;
         margin: 0 auto;
         color: white;
+        max-width: 1500px;
     }
 
-    @media (min-width: 640px) {
+    @media (max-width: 640px) {
         .content-container {
             max-width: none;
         }

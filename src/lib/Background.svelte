@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import ArrowCollapseDownIcon from 'svelte-material-icons/ArrowCollapseDown.svelte';
     let backgroundElement:HTMLDivElement;
     let blured = false;
     let showScollDown = true;
@@ -11,13 +12,13 @@
             } else {
                 blured = true;
             }
-        });
 
-        if (!(document.body.scrollTop)) {
-            showScollDown = false;
-        } else {
-            showScollDown = true;
-        }
+            if (window.scrollY != 0) {
+                showScollDown = false;
+            } else {
+                showScollDown = true;
+            }
+        });
     });
 </script>
 
@@ -25,7 +26,8 @@
     <h1>Prokuma</h1>
     <h2>Dohyun Kim</h2>
     <div class="scroll-down-picture" class:scroll-down-picture__show={showScollDown}>
-        <img src="/arrow.svg" alt="Scroll down" />
+        <ArrowCollapseDownIcon color="white" size="2.5rem"/>
+        <p>Scroll</p>
     </div>
 </div>
 
@@ -43,6 +45,7 @@
         background: #666 url('/background.jpeg') no-repeat;
         background-size: cover;
         overflow: hidden;
+        color: white;
         transition: filter, 0.5s;
 
         &__blur {
@@ -60,17 +63,21 @@
 
         .scroll-down-picture {
             position: absolute;
-            bottom: 0;
             opacity: 0;
+            bottom: 0;
             margin-bottom: 1rem;
-            transition: opacity, 0.2s;
+            transition: opacity, 0.5s;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+
+            p {
+                margin: 0;
+                font-size: 0.8rem;
+            }
 
             &__show {
                 opacity: 1;
-            }
-
-            img {
-                width: 10rem;
             }
         }
     }

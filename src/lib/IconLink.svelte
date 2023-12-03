@@ -14,6 +14,7 @@
         margin: 0 0.1rem;
         padding: 0.1rem;
         vertical-align: middle;
+        align-items: center;
 
         &__withText {
             text-decoration: underline;
