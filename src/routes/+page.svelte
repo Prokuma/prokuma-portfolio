@@ -114,6 +114,7 @@
                         title="Status Screen"
                         yearMonth="2023/08~"
                         imgSrc="/works/status_screen.jpeg"
+                        href="https://qiita.com/Prokuma/items/74faf08a7b62093c9d49"
                         description="研究室に置いてあるステータスボードです。"
                         tags={["Android", "Kotlin", "Firebase", "Nuxt.js", "TypeScript"]}
                     />
