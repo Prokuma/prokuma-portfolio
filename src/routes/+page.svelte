@@ -193,7 +193,7 @@
 
         <div class="hero-placeholder">
             <div class="footer">
-                <p>© 2023 Prokuma All rights reserved</p>
+                <p>© 2024 Prokuma All rights reserved</p>
             </div>
         </div>
     </div>
