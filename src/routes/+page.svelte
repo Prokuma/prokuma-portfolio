@@ -165,8 +165,13 @@
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem>
+                        <IconLink href="#" withText={true}>
+                            <PostIcon /> <b>D.Kim</b>, K.Asahina, Y.Kan, R.Zhang, Y.Nakashima: "Power-Efficient Acceleration of GCNs on CGLAs", Cool Chips 27, Apr, (2024).
+                        </IconLink>
+                    </SectionContentListItem>
+                    <SectionContentListItem>
                         <IconLink href="https://ken.ieice.org/ken/paper/20230804cCvO/" withText={true}>
-                            <PostIcon /> (査読なし) リニアアレイ型CGRA向けCGN 実装方法の検討と評価, “<b>金 道鉉</b>、中島康彦”, CPSY2023, Aug, (2023).
+                            <PostIcon /> (査読なし) リニアアレイ型CGRA向けCGN 実装方法の検討と評価, <b>金 道鉉</b>, 中島康彦, CPSY2023, Aug, (2023).
                         </IconLink>
                     </SectionContentListItem>
                 </SectionContentList>
