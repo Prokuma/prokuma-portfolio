@@ -69,8 +69,8 @@
             <SectionContent>
                 <SectionSubTitle>学歴</SectionSubTitle>
                 <SectionContentList>
-                    <SectionContentListItem title="1999年3月">大韓民国京畿道高陽市生まれ</SectionContentListItem>
-                    <SectionContentListItem title="20??年?月">仁川広域市へ移住</SectionContentListItem>
+                    <SectionContentListItem title="199?年3月">大韓民国京畿道高陽市生まれ</SectionContentListItem>
+                    <SectionContentListItem title="200?年?月">仁川広域市へ移住</SectionContentListItem>
                     <SectionContentListItem title="2015年3月~2018年2月">仁川松都高等学校</SectionContentListItem>
                     <SectionContentListItem title="2018年4月~2022年3月">九州工業大学 情報工学部 知能情報工学科</SectionContentListItem>
                     <SectionContentListItem title="2022年4月~2024年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士前期課程</SectionContentListItem>
