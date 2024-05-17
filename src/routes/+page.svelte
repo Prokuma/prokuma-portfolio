@@ -59,7 +59,7 @@
                     <SectionContentListItem align="right" title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
                     <SectionContentListItem align="right" title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
                     <SectionContentListItem align="right" title="ツール">Vim / Docker / Git / Linux / Icarus Verilog / Firebase</SectionContentListItem>
-                    <SectionContentListItem align="right" title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js</SectionContentListItem>
+                    <SectionContentListItem align="right" title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js / Next.js</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -83,7 +83,7 @@
                     <SectionContentListItem align="right" title="2014年2月~2015年12月">個人事業主(ソフトウェア開発など)</SectionContentListItem>
                     <SectionContentListItem align="right" title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
                     <SectionContentListItem align="right" title="2023年5月~">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
-                    <SectionContentListItem align="right" title="2023年8月~">個人事業主(ソフトウェア開発など)</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2024年5月~">mocomoco株式会社 リードエンジニア</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -93,6 +93,14 @@
             <SectionContent>
                 <SectionSubTitle>プロダクト</SectionSubTitle>
                 <Works>
+                    <WorkCard
+                        title="ggml-imax（開発中）"
+                        yearMonth="2024/03~"
+                        imgSrc="/works/dummy.svg"
+                        href="https://github.com/NAIST-Archlab/ggml-imax"
+                        description="開発中のggmlのIMAX実装です。"
+                        tags={["C", "ggml", "IMAX", "Research"]}
+                    />
                     <WorkCard
                         title="Portfolio Website"
                         yearMonth="2023/12~"
@@ -118,11 +126,11 @@
                         tags={["Android", "Kotlin", "Firebase", "Nuxt.js", "TypeScript"]}
                     />
                     <WorkCard
-                        title="IMAX_GCN"
+                        title="IMAX_GNN"
                         yearMonth="2023/01~"
                         imgSrc="/works/gcn.png"
-                        href="https://github.com/NAIST-Archlab/IMAX2_GCN"
-                        description="研究で書いたIMAX上で動くGCNの実装です。"
+                        href="https://github.com/NAIST-Archlab/IMAX_GMN"
+                        description="研究で書いたIMAX上で動くGNNの実装です。"
                         tags={["C", "CUDA", "GCN", "IMAX", "Research"]}
                     />
                     <WorkCard
