@@ -96,7 +96,7 @@
                     <WorkCard
                         title="ggml-imax（開発中）"
                         yearMonth="2024/03~"
-                        imgSrc="/works/dummy.svg"
+                        imgSrc="/dummy.svg"
                         href="https://github.com/NAIST-Archlab/ggml-imax"
                         description="開発中のggmlのIMAX実装です。"
                         tags={["C", "ggml", "IMAX", "Research"]}
