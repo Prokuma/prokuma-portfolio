@@ -172,7 +172,7 @@
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem>
-                        <IconLink href="#" withText={true}>
+                        <IconLink href="https://ieeexplore.ieee.org/document/10531184" withText={true}>
                             <PostIcon /> <b>D.Kim</b>, K.Asahina, Y.Kan, R.Zhang, Y.Nakashima: "Power-Efficient Acceleration of GCNs on CGLAs", Cool Chips 27, Apr, (2024).
                         </IconLink>
                     </SectionContentListItem>
