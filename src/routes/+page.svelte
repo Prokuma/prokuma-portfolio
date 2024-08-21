@@ -82,8 +82,9 @@
                 <SectionContentList>
                     <SectionContentListItem align="right" title="2014年2月~2015年12月">個人事業主(ソフトウェア開発など)</SectionContentListItem>
                     <SectionContentListItem align="right" title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2024年5月~2024年8月">mocomoco株式会社 リードエンジニア</SectionContentListItem>
                     <SectionContentListItem align="right" title="2023年5月~">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
-                    <SectionContentListItem align="right" title="2024年5月~">mocomoco株式会社 リードエンジニア</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2024年8月~">mocomoco株式会社 取締役CTO</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -178,7 +179,7 @@
                     </SectionContentListItem>
                     <SectionContentListItem>
                         <IconLink href="https://ken.ieice.org/ken/paper/20230804cCvO/" withText={true}>
-                            <PostIcon /> (査読なし) リニアアレイ型CGRA向けCGN 実装方法の検討と評価, <b>金 道鉉</b>, 中島康彦, CPSY2023, Aug, (2023).
+                            <PostIcon /> (査読なし) リニアアレイ型CGRA向けGCN実装方法の検討と評価, <b>金 道鉉</b>, 中島康彦, CPSY2023, Aug, (2023).
                         </IconLink>
                     </SectionContentListItem>
                 </SectionContentList>
