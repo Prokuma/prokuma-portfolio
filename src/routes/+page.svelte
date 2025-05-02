@@ -95,12 +95,12 @@
                 <SectionSubTitle>プロダクト</SectionSubTitle>
                 <Works>
                     <WorkCard
-                        title="ggml-imax（開発中）"
-                        yearMonth="2024/03~"
+                        title="PyIMAX"
+                        yearMonth="2025/01~"
                         imgSrc="/dummy.svg"
-                        href="https://github.com/NAIST-Archlab/ggml-imax"
-                        description="開発中のggmlのIMAX実装です。"
-                        tags={["C", "ggml", "IMAX", "Research"]}
+                        href="https://github.com/NAIST-Archlab/PyIMAX"
+                        description="IMAXカーネルのPythonラッパーです。"
+                        tags={["C", "C++", "Pybind11", "Python", "IMAX", "Research"]}
                     />
                     <WorkCard
                         title="Portfolio Website"
@@ -173,8 +173,18 @@
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem>
+                        <IconLink href="https://ieeexplore.ieee.org/document/10968638" withText={true}>
+                            <PostIcon /> K. Asahina, <b>D. Kim</b>, T. Akabe, V. T. Duong Le, Y. Nakashima: "Energy-Efficient SpMM Kernels for GATs and GCNs on a CGLA", ICMLAS 2025, Mar, (2025).
+                        </IconLink>
+                    </SectionContentListItem>
+                    <SectionContentListItem>
                         <IconLink href="https://ieeexplore.ieee.org/document/10531184" withText={true}>
                             <PostIcon /> <b>D.Kim</b>, K.Asahina, Y.Kan, R.Zhang, Y.Nakashima: "Power-Efficient Acceleration of GCNs on CGLAs", Cool Chips 27, Apr, (2024).
+                        </IconLink>
+                    </SectionContentListItem>
+                    <SectionContentListItem>
+                        <IconLink href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-14.pdf" withText={true}>
+                            <PostIcon /> (査読なし) 合成単語データを用いた低コスト高品質な音声認識のドメイン適応, 小松 秀輔, 大西 一誉, 田中 康紀, <b>金 道鉉</b>, 吉野 幸一郎, NLP2025, Mar, (2025).
                         </IconLink>
                     </SectionContentListItem>
                     <SectionContentListItem>
@@ -206,7 +216,7 @@
 
         <div class="hero-placeholder">
             <div class="footer">
-                <p>© 2024 Prokuma All rights reserved</p>
+                <p>© 2025 Prokuma All rights reserved</p>
             </div>
         </div>
     </div>
