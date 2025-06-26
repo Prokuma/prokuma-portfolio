@@ -35,7 +35,7 @@
                     <SectionContentListItem title="名前">金 道鉉 (Dohyun Kim)</SectionContentListItem>
                     <SectionContentListItem title="居住">奈良県奈良市</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
-                    <SectionContentListItem title="所属">奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
+                    <SectionContentListItem title="所属">mocomoco株式会社 / 奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
                     <SectionContentListItem title="興味">コンピュータ・アーキテクチャ / 組込システム / FPGA / Webバックエンドなど</SectionContentListItem>
                     <SectionContentListItem title="研究分野">コンピュータ・アーキテクチャ</SectionContentListItem>
@@ -172,6 +172,11 @@
             <SectionContent align="right">
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
+                    <SectionContentListItem>
+                        <IconLink href="https://ieeexplore.ieee.org/document/11048859" withText={true}>
+                            <PostIcon /> <b>D. Kim</b> and Y. Nakashima, "Optimizing Matrix-Vector Operations with CGLA for High-Performance Approximate k-NN Search," IEEE Access, Aug, (2025).
+                        </IconLink>
+                    </SectionContentListItem>
                     <SectionContentListItem>
                         <IconLink href="https://ieeexplore.ieee.org/document/10968638" withText={true}>
                             <PostIcon /> K. Asahina, <b>D. Kim</b>, T. Akabe, V. T. Duong Le, Y. Nakashima: "Energy-Efficient SpMM Kernels for GATs and GCNs on a CGLA", ICMLAS 2025, Mar, (2025).
