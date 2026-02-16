@@ -33,7 +33,7 @@
                 <SectionSubTitle>情報</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem title="名前">金 道鉉 (Dohyun Kim)</SectionContentListItem>
-                    <SectionContentListItem title="居住">奈良県奈良市</SectionContentListItem>
+                    <SectionContentListItem title="居住">香川県高松市</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
                     <SectionContentListItem title="所属">mocomoco株式会社 / 奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
@@ -73,7 +73,7 @@
                     <SectionContentListItem title="200?年?月">仁川広域市へ移住</SectionContentListItem>
                     <SectionContentListItem title="2018年4月~2022年3月">九州工業大学 情報工学部 知能情報工学科</SectionContentListItem>
                     <SectionContentListItem title="2022年4月~2024年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士前期課程</SectionContentListItem>
-                    <SectionContentListItem title="2024年4月~">奈良先端科学技術大学院大学 先端科学技術研究科 博士後期課程</SectionContentListItem>
+                    <SectionContentListItem title="2024年4月~2026年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士後期課程</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
             <br/>
@@ -83,8 +83,8 @@
                     <SectionContentListItem align="right" title="2014年2月~2015年12月">個人事業主(ソフトウェア開発など)</SectionContentListItem>
                     <SectionContentListItem align="right" title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
                     <SectionContentListItem align="right" title="2024年5月~2024年8月">mocomoco株式会社 リードエンジニア</SectionContentListItem>
-                    <SectionContentListItem align="right" title="2023年5月~">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
-                    <SectionContentListItem align="right" title="2024年8月~">mocomoco株式会社 取締役CTO</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2023年5月~2025年9月">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2024年8月~2026年2月">mocomoco株式会社 取締役CTO</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
@@ -188,6 +188,11 @@
                         </IconLink>
                     </SectionContentListItem>
                     <SectionContentListItem>
+                        <IconLink href="https://2025.ieeeasru.org/" withText={true}>
+                            <PostIcon /> Shusuke Komatsu, Kazuyo Onishi, Koki Tanaka, <b>Dohyun Kim</b> and Koichiro Yoshino: "Efficient ASR Domain Adaptation with Long Noun Phrases: Harnessing the Linguistic Characteristics of Japanese", ASRU 2025, Dec, (2025).
+                        </IconLink>
+                    </SectionContentListItem>
+                    <SectionContentListItem>
                         <IconLink href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-14.pdf" withText={true}>
                             <PostIcon /> (査読なし) 合成単語データを用いた低コスト高品質な音声認識のドメイン適応, 小松 秀輔, 大西 一誉, 田中 康紀, <b>金 道鉉</b>, 吉野 幸一郎, NLP2025, Mar, (2025).
                         </IconLink>
@@ -221,7 +226,7 @@
 
         <div class="hero-placeholder">
             <div class="footer">
-                <p>© 2025 Prokuma All rights reserved</p>
+                <p>© 2026 Prokuma All rights reserved</p>
             </div>
         </div>
     </div>
