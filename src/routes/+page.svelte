@@ -35,7 +35,6 @@
                     <SectionContentListItem title="名前">金 道鉉 (Dohyun Kim)</SectionContentListItem>
                     <SectionContentListItem title="居住">香川県高松市</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
-                    <SectionContentListItem title="所属">mocomoco株式会社 / 奈良先端科学技術大学院大学 先端科学技術研究科</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
                     <SectionContentListItem title="興味">コンピュータ・アーキテクチャ / 組込システム / FPGA / Webバックエンドなど</SectionContentListItem>
                     <SectionContentListItem title="研究分野">コンピュータ・アーキテクチャ</SectionContentListItem>
