@@ -33,7 +33,7 @@
                 <SectionSubTitle>情報</SectionSubTitle>
                 <SectionContentList>
                     <SectionContentListItem title="名前">金 道鉉 (Dohyun Kim)</SectionContentListItem>
-                    <SectionContentListItem title="居住">香川県高松市</SectionContentListItem>
+                    <SectionContentListItem title="居住">茨城県</SectionContentListItem>
                     <SectionContentListItem title="出身">大韓民国仁川広域市</SectionContentListItem>
                     <SectionContentListItem title="語学">韓国語(ネイティブ) / 日本語(JLPT N1) / 英語(研究できる程度)</SectionContentListItem>
                     <SectionContentListItem title="興味">コンピュータ・アーキテクチャ / 組込システム / FPGA / Webバックエンドなど</SectionContentListItem>
@@ -57,7 +57,7 @@
                 <SectionContentList>
                     <SectionContentListItem align="right" title="言語">C / Python / CUDA / Verilog / Go / TypeScript / Swift / Kotlin</SectionContentListItem>
                     <SectionContentListItem align="right" title="分野">FPGA / 電子工作 / 機械学習 / Web / iOS / Android</SectionContentListItem>
-                    <SectionContentListItem align="right" title="ツール">Vim / Docker / Git / Linux / Icarus Verilog / Firebase</SectionContentListItem>
+                    <SectionContentListItem align="right" title="ツール">Vim / Docker / Kubernetes / Git / Linux / Icarus Verilog / AWS / Firebase</SectionContentListItem>
                     <SectionContentListItem align="right" title="ライブラリ">Gin / GORM / OpenMP / PyTorch / Svelte / Nuxt.js / Next.js</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
@@ -70,9 +70,9 @@
                 <SectionContentList>
                     <SectionContentListItem title="199?年3月">大韓民国京畿道高陽市生まれ</SectionContentListItem>
                     <SectionContentListItem title="200?年?月">仁川広域市へ移住</SectionContentListItem>
-                    <SectionContentListItem title="2018年4月~2022年3月">九州工業大学 情報工学部 知能情報工学科</SectionContentListItem>
-                    <SectionContentListItem title="2022年4月~2024年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士前期課程</SectionContentListItem>
-                    <SectionContentListItem title="2024年4月~2026年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士後期課程</SectionContentListItem>
+                    <SectionContentListItem title="2018年4月~2022年3月">九州工業大学 情報工学部 知能情報工学科 学士（情報工学）</SectionContentListItem>
+                    <SectionContentListItem title="2022年4月~2024年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士前期課程 修士（工学）</SectionContentListItem>
+                    <SectionContentListItem title="2024年4月~2026年3月">奈良先端科学技術大学院大学 先端科学技術研究科 博士後期課程 博士（工学）</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
             <br/>
