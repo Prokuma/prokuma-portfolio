@@ -84,6 +84,7 @@
                     <SectionContentListItem align="right" title="2024年5月~2024年8月">mocomoco株式会社 リードエンジニア</SectionContentListItem>
                     <SectionContentListItem align="right" title="2023年5月~2025年9月">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
                     <SectionContentListItem align="right" title="2024年8月~2026年2月">mocomoco株式会社 取締役CTO</SectionContentListItem>
+                    <SectionContentListItem align="right" title="2026年4月~">???</SectionContentListItem>
                 </SectionContentList>
             </SectionContent>
         </Section>
