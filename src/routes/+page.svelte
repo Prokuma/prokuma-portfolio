@@ -79,7 +79,6 @@
             <SectionContent align="right">
                 <SectionSubTitle>職歴</SectionSubTitle>
                 <SectionContentList>
-                    <SectionContentListItem align="right" title="2014年2月~2015年12月">個人事業主(ソフトウェア開発など)</SectionContentListItem>
                     <SectionContentListItem align="right" title="2018年5月~2022年3月">株式会社オプティム アルバイトスタッフ</SectionContentListItem>
                     <SectionContentListItem align="right" title="2024年5月~2024年8月">mocomoco株式会社 リードエンジニア</SectionContentListItem>
                     <SectionContentListItem align="right" title="2023年5月~2025年9月">奈良先端科学技術大学院大学 リサーチアシスタント</SectionContentListItem>
@@ -172,6 +171,11 @@
             <SectionContent align="right">
                 <SectionSubTitle>論文</SectionSubTitle>
                 <SectionContentList>
+                    <SectionContentListItem>
+                        <IconLink href="https://doi.org/10.1587/transinf.2026pap0002" withText={true}>
+                            <PostIcon /> K. Asahina, <b>D. Kim</b> and Yasuhiko Nakashima, "IMAX-SpMM: An Energy-Efficient and Dataflow-Optimized SpMM Kernel on CGLA for GNNs", IEICE Trans., Vol.E110-D,No.01,pp.-,Jun. (2026)
+                        </IconLink>
+                    </SectionContentListItem>
                     <SectionContentListItem>
                         <IconLink href="https://ieeexplore.ieee.org/document/11048859" withText={true}>
                             <PostIcon /> <b>D. Kim</b> and Y. Nakashima, "Optimizing Matrix-Vector Operations with CGLA for High-Performance Approximate k-NN Search," IEEE Access, Aug, (2025).
