@@ -173,7 +173,7 @@
                 <SectionContentList>
                     <SectionContentListItem>
                         <IconLink href="https://doi.org/10.1587/transinf.2026pap0002" withText={true}>
-                            <PostIcon /> K. Asahina, <b>D. Kim</b> and Yasuhiko Nakashima, "IMAX-SpMM: An Energy-Efficient and Dataflow-Optimized SpMM Kernel on CGLA for GNNs", IEICE Trans., Vol.E110-D,No.01,pp.-,Jun. (2026)
+                            <PostIcon /> K. Asahina, <b>D. Kim</b> and Y. Nakashima, "IMAX-SpMM: An Energy-Efficient and Dataflow-Optimized SpMM Kernel on CGLA for GNNs", IEICE Trans., Vol.E110-D,No.01,pp.-,Jun. (2026)
                         </IconLink>
                     </SectionContentListItem>
                     <SectionContentListItem>
