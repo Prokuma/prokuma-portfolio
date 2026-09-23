@@ -14,19 +14,23 @@
 
 <style lang="scss">
 	tr {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		margin: 0 0 1rem;
+
 		th,
 		td {
-			padding: 0.15rem 0;
+			display: block;
+			padding: 0;
 			color: #ccc;
 			text-align: left;
-			vertical-align: top;
 		}
 
 		th {
-			padding-right: 1rem;
+			margin-bottom: 0.25rem;
 			color: white;
 			font-weight: 700;
-			white-space: nowrap;
 		}
 
 		&.right th,
@@ -48,18 +52,8 @@
 	}
 
 	@media (max-width: 640px) {
-		tr,
-		tr.right {
-			th,
-			td {
-				display: block;
-				text-align: left;
-			}
-
-			th {
-				padding: 0;
-				font-size: 1.1rem;
-			}
+		tr th {
+			font-size: 1.1rem;
 		}
 	}
 </style>

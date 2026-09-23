@@ -9,14 +9,15 @@
 <style lang="scss">
 	.content {
 		box-sizing: border-box;
-		width: fit-content;
-		max-width: 100%;
-		margin: 0.5rem auto 0.5rem 0;
-		padding: 1.5rem;
-		border-radius: 5px;
-		background-color: #5558;
-		backdrop-filter: blur(5px);
-		font-size: 1.3rem;
+		width: min(100%, 65.5rem);
+		margin: 1rem auto 1rem 0;
+		padding: clamp(1rem, 2.5vw, 2rem);
+		border: 1px solid rgb(255 255 255 / 9%);
+		border-radius: 0.55rem;
+		background: rgb(25 28 40 / 76%);
+		box-shadow: 0 1rem 3rem rgb(0 0 0 / 16%);
+		backdrop-filter: blur(12px);
+		font-size: clamp(1rem, 1.1vw, 1.125rem);
 		text-align: left;
 
 		&.right {
@@ -27,11 +28,11 @@
 	}
 
 	@media (max-width: 640px) {
-		.content {
-			width: calc(100% - 2rem);
-			max-width: none;
+		.content,
+		.content.right {
+			width: 100%;
+			margin: 0.5rem 0;
 			padding: 1rem;
-			font-size: 1rem;
 		}
 	}
 </style>

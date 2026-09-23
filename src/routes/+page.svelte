@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mdiMail, mdiPost, mdiHistory, mdiBookOpen, mdiInformation } from '@mdi/js';
+	import { mdiMail, mdiHistory, mdiBookOpen, mdiInformation } from '@mdi/js';
 	import Icon from '$lib/Icon.svelte';
 	import IconLink from '$lib/IconLink.svelte';
 	import Section from '$lib/Section.svelte';
@@ -8,6 +8,7 @@
 	import SectionContent from '$lib/SectionContent.svelte';
 	import SectionContentList from '$lib/SectionContentList.svelte';
 	import SectionContentListItem from '$lib/SectionContentListItem.svelte';
+	import PublicationList from '$lib/PublicationList.svelte';
 	import SiteShell from '$lib/SiteShell.svelte';
 	import Works from '$lib/Works.svelte';
 	import WorkCard from '$lib/WorkCard.svelte';
@@ -83,8 +84,11 @@
 	<Section id="works">
 		<SectionTitle title="Works"><Icon path={mdiBookOpen} /></SectionTitle>
 		<SectionContent>
-			<SectionSubTitle>プロダクト</SectionSubTitle>
-			<Works>
+			<div class="works-heading">
+				<SectionSubTitle>プロダクト</SectionSubTitle>
+				<span>{works.length} projects</span>
+			</div>
+			<Works itemCount={works.length}>
 				{#each works as work (work.title)}
 					<WorkCard {...work} />
 				{/each}
@@ -92,17 +96,7 @@
 		</SectionContent>
 		<SectionContent align="right">
 			<SectionSubTitle>論文</SectionSubTitle>
-			<SectionContentList>
-				{#each publications as publication (publication.href)}
-					<SectionContentListItem>
-						<IconLink href={publication.href} withText>
-							<Icon path={mdiPost} />
-							{@const parts = publication.text.split(publication.highlight)}
-							{parts[0]}<b>{publication.highlight}</b>{parts.slice(1).join(publication.highlight)}
-						</IconLink>
-					</SectionContentListItem>
-				{/each}
-			</SectionContentList>
+			<PublicationList items={publications} align="right" />
 		</SectionContent>
 	</Section>
 
@@ -127,3 +121,28 @@
 		</SectionContent>
 	</Section>
 </SiteShell>
+
+<style lang="scss">
+	.works-heading {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 1rem;
+
+		span {
+			color: #c8ccd4;
+			font-size: 0.8rem;
+			font-weight: 600;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.works-heading span {
+			font-size: 0.7rem;
+		}
+	}
+</style>

@@ -19,7 +19,7 @@
 	@keyframes slideIn {
 		from {
 			opacity: 0;
-			transform: translateY(40px);
+			transform: translateY(24px);
 		}
 		to {
 			opacity: 1;
@@ -28,19 +28,34 @@
 	}
 
 	section {
-		min-height: 100vh;
-		padding-top: 4rem;
+		box-sizing: border-box;
+		min-height: 100svh;
+		padding-block: clamp(5rem, 9vh, 7rem) 3rem;
 		color: white;
-		scroll-margin-top: 4rem;
+		scroll-margin-top: 3rem;
 		opacity: 1;
 
 		&.section__show {
-			animation: slideIn 0.5s both;
+			animation: slideIn 0.45s both;
 		}
 	}
 
 	.container {
-		margin: 0 2rem;
+		box-sizing: border-box;
+		width: min(100%, 1048px);
+		max-width: 1048px;
+		margin-inline: auto;
+		padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+	}
+
+	@media (max-width: 640px) {
+		section {
+			padding-block: 5rem 2.5rem;
+		}
+
+		.container {
+			padding-inline: 1rem;
+		}
 	}
 
 	@media (prefers-reduced-motion: reduce) {

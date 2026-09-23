@@ -164,36 +164,50 @@ export const works = [
 export const publications = [
 	{
 		href: 'https://doi.org/10.1587/transinf.2026pap0002',
+		year: 2026,
+		venue: 'IEICE Transactions',
 		highlight: 'D. Kim',
 		text: 'K. Asahina, D. Kim and Y. Nakashima, "IMAX-SpMM: An Energy-Efficient and Dataflow-Optimized SpMM Kernel on CGLA for GNNs", IEICE Trans., Vol.E110-D,No.01,pp.-,Jun. (2026)'
 	},
 	{
 		href: 'https://ieeexplore.ieee.org/document/11048859',
+		year: 2025,
+		venue: 'IEEE Access',
 		highlight: 'D. Kim',
 		text: 'D. Kim and Y. Nakashima, "Optimizing Matrix-Vector Operations with CGLA for High-Performance Approximate k-NN Search," IEEE Access, Aug, (2025).'
 	},
 	{
 		href: 'https://ieeexplore.ieee.org/document/10968638',
+		year: 2025,
+		venue: 'ICMLAS 2025',
 		highlight: 'D. Kim',
 		text: 'K. Asahina, D. Kim, T. Akabe, V. T. Duong Le, Y. Nakashima: "Energy-Efficient SpMM Kernels for GATs and GCNs on a CGLA", ICMLAS 2025, Mar, (2025).'
 	},
 	{
 		href: 'https://ieeexplore.ieee.org/document/10531184',
+		year: 2024,
+		venue: 'Cool Chips 27',
 		highlight: 'D.Kim',
 		text: 'D.Kim, K.Asahina, Y.Kan, R.Zhang, Y.Nakashima: "Power-Efficient Acceleration of GCNs on CGLAs", Cool Chips 27, Apr, (2024).'
 	},
 	{
 		href: 'https://2025.ieeeasru.org/',
+		year: 2025,
+		venue: 'ASRU 2025',
 		highlight: 'Dohyun Kim',
 		text: 'Shusuke Komatsu, Kazuyo Onishi, Koki Tanaka, Dohyun Kim and Koichiro Yoshino: "Efficient ASR Domain Adaptation with Long Noun Phrases: Harnessing the Linguistic Characteristics of Japanese", ASRU 2025, Dec, (2025).'
 	},
 	{
 		href: 'https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P5-14.pdf',
+		year: 2025,
+		venue: 'NLP2025',
 		highlight: '金 道鉉',
 		text: '(査読なし) 合成単語データを用いた低コスト高品質な音声認識のドメイン適応, 小松 秀輔, 大西 一誉, 田中 康紀, 金 道鉉, 吉野 幸一郎, NLP2025, Mar, (2025).'
 	},
 	{
 		href: 'https://ken.ieice.org/ken/paper/20230804cCvO/',
+		year: 2023,
+		venue: 'CPSY2023',
 		highlight: '金 道鉉',
 		text: '(査読なし) リニアアレイ型CGRA向けGCN実装方法の検討と評価, 金 道鉉, 中島康彦, CPSY2023, Aug, (2023).'
 	}
