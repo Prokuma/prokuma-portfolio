@@ -1,18 +1,15 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
+
+	export let id: string;
 	let showSection = false;
 
-	function changed(e: CustomEvent) {
-		showSection = e.detail.inView && !showSection;
+	function changed(event: CustomEvent<{ inView: boolean }>) {
+		showSection = event.detail.inView;
 	}
 </script>
 
-<section
-	use:inview={{}}
-	on:inview_change={changed}
-	class="section"
-	class:section__show={showSection}
->
+<section {id} use:inview={{}} on:inview_change={changed} class:section__show={showSection}>
 	<div class="container">
 		<slot />
 	</div>
@@ -20,29 +17,35 @@
 
 <style lang="scss">
 	@keyframes slideIn {
-		0% {
+		from {
 			opacity: 0;
-			transform: translateY(100px);
+			transform: translateY(40px);
 		}
-		100% {
+		to {
 			opacity: 1;
 			transform: translateY(0);
 		}
 	}
-	.section {
+
+	section {
 		min-height: 100vh;
 		padding-top: 4rem;
 		color: white;
+		scroll-margin-top: 4rem;
+		opacity: 1;
 
-		.container {
-			margin: 0 2rem;
+		&.section__show {
+			animation: slideIn 0.5s both;
 		}
+	}
 
-		&__show {
-			animation: slideIn 0.5s forwards;
-			opacity: 1;
+	.container {
+		margin: 0 2rem;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		section.section__show {
+			animation: none;
 		}
-
-		opacity: 0;
 	}
 </style>

@@ -1,46 +1,64 @@
 <script lang="ts">
 	export let title = '';
-	export let align = 'left';
+	export let align: 'left' | 'right' = 'left';
 </script>
 
-<tr style="--text-align: {align};">
-	{#if title != ''}
-		<td class="item_head">{title}</td>
+<tr class:right={align === 'right'}>
+	{#if title}
+		<th scope="row">{title}</th>
 	{:else}
-		<td></td>
+		<th scope="row" class="visually-hidden">項目</th>
 	{/if}
 	<td><slot /></td>
 </tr>
 
 <style lang="scss">
 	tr {
-		.item_head {
-			font-weight: bold;
-			padding-right: 1rem;
-			color: white;
-			text-align: left;
-		}
+		th,
 		td {
-			text-align: var(--text-align);
-			color: #cccccc;
-			font-weight: light;
+			padding: 0.15rem 0;
+			color: #ccc;
+			text-align: left;
+			vertical-align: top;
 		}
 
-		@media (max-width: 640px) {
-			.item_head {
-				display: block;
-				font-size: 1.1rem;
-				font-weight: bold;
-				padding: 0rem;
-				color: white;
-				text-align: var(--text-align);
-			}
+		th {
+			padding-right: 1rem;
+			color: white;
+			font-weight: 700;
+			white-space: nowrap;
+		}
+
+		&.right th,
+		&.right td {
+			text-align: right;
+		}
+	}
+
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	@media (max-width: 640px) {
+		tr,
+		tr.right {
+			th,
 			td {
 				display: block;
-				display: flex;
-				color: #cccccc;
-				font-weight: light;
-				text-align: var(--text-align);
+				text-align: left;
+			}
+
+			th {
+				padding: 0;
+				font-size: 1.1rem;
 			}
 		}
 	}

@@ -36,3 +36,9 @@ npm run preview
 `package-lock.json`を必ずコミットし、CIとローカルでは`npm ci`を使用します。
 SvelteKit・Svelte・Vite・`@sveltejs/vite-plugin-svelte`は互換性を確認して一緒に更新し、上記の検証を実行してください。
 アイコンには`@mdi/js`と`src/lib/Icon.svelte`を使用しています。
+
+## サイト内容の更新
+
+プロフィール、スキル、学歴、職歴、作品、論文、連絡先は`src/lib/data/portfolio.ts`で管理しています。項目を追加・修正するとトップページに反映されます。各情報に使う画像は`static/`以下に置き、作品の`imgSrc`は`/works/ファイル名`の形式で指定します。
+
+トップページのセクションを増減するときは、`portfolioNavigation`と`src/routes/+page.svelte`の`Section`を同時に更新します。`Section`の`id`はナビ項目の`id`と一致させます。privacyページのナビ項目は`privacyNavigation`で管理します。

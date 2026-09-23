@@ -1,134 +1,92 @@
 <script lang="ts">
-	import Icon from '$lib/Icon.svelte';
-	import { mdiHome } from '@mdi/js';
 	import { onMount } from 'svelte';
-	import { tweened } from 'svelte/motion';
-	import { cubicOut } from 'svelte/easing';
+	import { mdiHome } from '@mdi/js';
+	import Icon from '$lib/Icon.svelte';
+	import type { NavigationItem } from '$lib/data/portfolio';
 
-	let sections: {
-		title: string;
-		active: boolean;
-		icon: string;
-		element: HTMLElement;
-	}[] = [];
-
-	let scrollTop = tweened(0, {
-		duration: 500,
-		easing: cubicOut
-	});
-
-	let topElement: HTMLElement | null = null;
-	let isTopPage = true;
+	export let items: NavigationItem[];
+	let activeId = '';
 
 	onMount(() => {
-		topElement = document.querySelector<HTMLElement>('body') as HTMLElement;
-		let newSections: {
-			title: string;
-			active: boolean;
-			icon: string;
-			element: HTMLElement;
-		}[] = [];
-		document.querySelectorAll<HTMLElement>('.section').forEach((element) => {
-			newSections.push({
-				title: element.querySelector('.section_title')?.textContent || '',
-				active: false,
-				icon: element.querySelector('.section_icon path')?.getAttribute('d') || '',
-				element: element
-			});
-			sections = newSections;
-		});
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visible = entries
+					.filter((entry) => entry.isIntersecting)
+					.sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+				if (visible) activeId = visible.target.id;
+			},
+			{ rootMargin: '-15% 0px -65% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+		);
 
-		window.addEventListener('scroll', () => {
-			newSections = [...sections];
-			for (let i = 0; i < newSections.length - 1; i++) {
-				if (i === 0) {
-					isTopPage = newSections[i].element.offsetTop > window.scrollY + 1;
-				}
-				if (
-					newSections[i].element.offsetTop <= window.scrollY + 1 &&
-					newSections[i + 1].element.offsetTop > window.scrollY + 1
-				) {
-					newSections[i].active = true;
-				} else {
-					newSections[i].active = false;
-				}
-			}
-			newSections[newSections.length - 1].active =
-				newSections[newSections.length - 1].element.offsetTop <= window.scrollY + 1;
-			sections = newSections;
-		});
+		for (const item of items) {
+			const section = document.getElementById(item.id);
+			if (section) observer.observe(section);
+		}
 
-		scrollTop.subscribe(() => {
-			window.scrollTo(0, $scrollTop);
-		});
+		return () => observer.disconnect();
 	});
-
-	function scrollTo(element: HTMLElement) {
-		scrollTop.set(document.scrollingElement?.scrollTop || document.body.scrollTop, {
-			duration: 0
-		});
-		scrollTop.set(element.offsetTop);
-	}
 </script>
 
-<div class="navigator">
-	<button class="navigate" on:click={() => topElement && scrollTo(topElement)}>
+<nav class="navigator" aria-label="ページ内ナビゲーション">
+	<a class="navigate" href="#top" class:active={activeId === ''} aria-label="Home" title="Home">
 		<Icon path={mdiHome} />
-		<div class="navigate_title" class:navigate_title__active={isTopPage}>Home</div>
-	</button>
-	{#each sections as section (section.element)}
-		<button class="navigate" on:click={() => scrollTo(section.element)}>
-			<Icon path={section.icon} />
-			<div class="navigate_title" class:navigate_title__active={section.active}>
-				{section.title}
-			</div>
-		</button>
+		<span class="navigate_title" class:navigate_title__active={activeId === ''}>Home</span>
+	</a>
+	{#each items as item (item.id)}
+		<a
+			class="navigate"
+			href="#{item.id}"
+			class:active={activeId === item.id}
+			aria-label={item.title}
+			title={item.title}
+		>
+			<Icon path={item.icon} />
+			<span class="navigate_title" class:navigate_title__active={activeId === item.id}>
+				{item.title}
+			</span>
+		</a>
 	{/each}
-</div>
+</nav>
 
 <style lang="scss">
 	.navigator {
 		position: fixed;
-		width: 100%;
+		z-index: 5;
+		inset: 0 0 auto;
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
-		top: 0;
-		background-color: none;
 		padding-bottom: 1rem;
+	}
 
-		.navigate {
-			margin: 0.6rem 0;
-			padding: 0 0.3rem;
-			font-size: 1.3rem;
-			font-weight: bold;
-			cursor: pointer;
-			transition: padding-top 0.2s;
-			border: none;
-			background: none;
-			color: #ffffff;
-			vertical-align: middle;
-			backdrop-filter: blur(30px);
+	.navigate {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+		margin: 0.6rem 0;
+		padding: 0 0.3rem;
+		border: 0;
+		background: none;
+		color: white;
+		font-family: inherit;
+		font-size: 1.3rem;
+		font-weight: bold;
+		text-decoration: none;
+		backdrop-filter: blur(30px);
+		cursor: pointer;
 
-			.navigate_title {
-				display: none;
-				&__active {
-					display: inline-block;
-					color: #cccccc;
-				}
-			}
+		.navigate_title {
+			display: none;
+			color: #ccc;
+		}
 
-			&:last-child {
-				border-right: none;
-			}
+		&:hover .navigate_title,
+		.navigate_title__active {
+			display: inline-block;
+		}
 
-			&:hover {
-				padding-top: 0.2rem;
-				.navigate_title {
-					transition: padding-top 0.5s;
-					display: inline-block;
-				}
-			}
+		&:focus-visible {
+			outline: 2px solid white;
+			outline-offset: 3px;
 		}
 	}
 </style>

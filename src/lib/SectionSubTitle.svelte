@@ -1,9 +1,7 @@
-<div class="section_sub_title">
-	<slot />
-</div>
+<h3 class="section-sub-title"><slot /></h3>
 
 <style lang="scss">
-	.section_sub_title {
+	.section-sub-title {
 		margin: 0;
 		font-size: 1.5rem;
 		font-weight: bold;
