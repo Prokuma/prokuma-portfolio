@@ -80,9 +80,17 @@ export const employment = [
 
 export const works = [
 	{
-		title: 'PyIMAX',
-		yearMonth: '2025/01~',
+		title: 'Setsuna',
+		yearMonth: '2026/09~',
 		imgSrc: '/dummy.svg',
+		href: 'https://github.com/Prokuma/Setsuna',
+		description: 'RISC-V RV64GCのVerilog実装を目標としています。',
+		tags: ['Verilog', 'RISC-V']
+	},
+	{
+		title: 'PyIMAX',
+		yearMonth: '2025/01~2026/01',
+		imgSrc: '/pyimax.png',
 		href: 'https://github.com/NAIST-Archlab/PyIMAX',
 		description: 'IMAXカーネルのPythonラッパーです。',
 		tags: ['C', 'C++', 'Pybind11', 'Python', 'IMAX', 'Research']
