@@ -1,10 +1,10 @@
 <table class="list-table">
-    <slot />
+	<tbody><slot /></tbody>
 </table>
 
 <style lang="scss">
-    .list-table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+	.list-table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 </style>

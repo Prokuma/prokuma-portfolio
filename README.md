@@ -1,38 +1,38 @@
-# create-svelte
+# Prokuma Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+SvelteKit + Svelte + TypeScriptで構築し、静的HTMLとしてNetlifyに公開するポートフォリオです。
 
-## Creating a project
+## 開発環境
 
-If you're seeing this, you've probably already done this step. Congrats!
+Node.js 24 LTSを使用します。Voltaを使う場合は`package.json`の指定が自動適用されます。nvmを使う場合は`nvm install && nvm use`を実行してください。
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```sh
+npm ci
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## 変更の確認
 
-To create a production version of your app:
-
-```bash
+```sh
+npm run check
+npm run lint
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+整形には`npm run format`を使用します。ビルド成果物は`build/`に出力されます。
+トップページ`/`とプライバシーポリシー`/privacy`を確認してください。
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## CIと公開
+
+- PRでは依存のクリーンインストール、型チェック、Lint、静的ビルドを実行します。本番デプロイは実行しません。
+- mainへのpushでは同じ検証が成功したあと、固定バージョンのNetlify CLIで`build/`を本番公開します。
+- GitHub ActionsのSecretsに`NETLIFY_SITE_ID`と`NETLIFY_AUTH_TOKEN`が必要です。
+- Node.jsのメジャーバージョンは`.nvmrc`、`package.json`、`netlify.toml`で揃えてください。
+- Netlify側でもGit連携による自動公開を有効にしている場合は、二重公開を避けるため公開経路を確認してください。
+
+## 依存関係の更新
+
+`package-lock.json`を必ずコミットし、CIとローカルでは`npm ci`を使用します。
+SvelteKit・Svelte・Vite・`@sveltejs/vite-plugin-svelte`は互換性を確認して一緒に更新し、上記の検証を実行してください。
+アイコンには`@mdi/js`と`src/lib/Icon.svelte`を使用しています。
